@@ -24,7 +24,7 @@ int main() {
 
 	// Повна форма розгалуження
 	if (x < -1) secondPart = -sin(x) / (1 + pow(cos(x), 2));
-	else if ((x >= -1) && (x <= 1)) secondPart = -pow(cos(pow(sin(x), 2)), 2) - 1;
+	else if (x <= 1) secondPart = -pow(cos(pow(sin(x), 2)), 2) - 1;
 	else secondPart = -log10(x + 0.4);
 
 	// Обчислення та вивід значення у
